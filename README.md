@@ -1,3 +1,4 @@
 # GNU Arm Embedded Toolchain Docker image
-Run Docker to buid your project:
+Dockerfile to build image.
+Run Docker to buid your project with image:
 `docker run -v "$(pwd)":/build -w /build -it gnu-arm-embedded make`
