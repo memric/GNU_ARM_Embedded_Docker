@@ -1,10 +1,11 @@
-name: Docker Image CI
+name: Publish Docker image
 
-on: [push, pull_request]
+on:
+  release:
+    types: [published]
 
 jobs:
-
-  build:
+  build-and-push-image:
     runs-on: ubuntu-latest
 
     steps:
