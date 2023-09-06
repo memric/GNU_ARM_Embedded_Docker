@@ -11,4 +11,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag gnu_arm_embedded:$(date +%s)
+      run: docker build . --file Dockerfile --tag gnu_arm_embedded:${{ github.ref_name }}
