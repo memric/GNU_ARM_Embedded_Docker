@@ -10,3 +10,9 @@ Run Docker to buid your project with image:
 ```
 docker run -v "$(pwd)":/build -w /build -it memric/gnu_arm_embedded make
 ```
+
+## Image building
+
+```
+docker build . --file Dockerfile --tag gnu_arm_embedded:latest --platform linux/amd64
+```
